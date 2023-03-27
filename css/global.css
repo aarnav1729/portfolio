@@ -213,3 +213,29 @@ input:checked + .slider:before {
     padding: 1rem;
     width: 100%;
   }
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .head-text {
+    font-size: 0.8rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .theme-switch {
+    height: 22px;
+    width: 36px;
+  }
+  
+  .slider:before {
+    bottom: 2px;
+    left: 2px;
+    height: 16px;
+    width: 16px;
+  }
+}
