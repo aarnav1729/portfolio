@@ -200,3 +200,16 @@ input:checked + .slider:before {
   transform: scale(7);
 
 }
+
+/* Responsive 600px */
+@media (max-width: 600px) {
+  .icons a,
+  .icons .icon {
+    margin: 10px;
+  }
+
+  .theme-switch-wrapper {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+  }
