@@ -1,19 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 
 :root {
-  /* Light Mode */
-  --primary-color: #7360ff;
-  --secondary-color: #9a9bef;
-  --text-primary-color: #333333;
-  --text-secondary-color: #64707d;
-  --bg-primary-color: #fff;
-  --bg-secondary-color: #f2f2f2;
-  --other-color: #ccc;
-  --navbar-bg: rgba(0, 0, 0, 0.1);
-  --rotate-color: #000;
-}
-
-[data-theme="dark"] {
   /* Dark Mode */
   --primary-color: #7360ff;
   --secondary-color: #989aef;
@@ -24,6 +11,19 @@
   --other-color: #232323;
   --navbar-bg: rgba(0, 0, 0, 0.4);
   --rotate-color: #fff;
+}
+
+[data-theme="dark"] {
+  /* Light Mode */
+  --primary-color: #7360ff;
+  --secondary-color: #9a9bef;
+  --text-primary-color: #333333;
+  --text-secondary-color: #64707d;
+  --bg-primary-color: #fff;
+  --bg-secondary-color: #f2f2f2;
+  --other-color: #ccc;
+  --navbar-bg: rgba(0, 0, 0, 0.1);
+  --rotate-color: #000;
 }
 
 html {
@@ -100,10 +100,6 @@ h4 {
   margin: 0 20px;
   transition: all 0.3s ease-in-out;
   padding: 20px;
-}
-
-.navbar ul li a .nav-icon {
-  margin-right: 0.4rem;
 }
 
 .navbar ul li a:hover {
@@ -188,49 +184,6 @@ h4 {
   border-radius: 50%;
   padding: 30px;
   transform: translateY(-40px);
-}
-
-.overlay-icons {
-  position: relative;
-  z-index: 1;
-}
-
-/* Hero html icon*/
-.content .content-image::before {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: -20px;
-  background-image: url(/img/home/html5.svg);
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  z-index: 1;
-}
-
-/* Hero Js icon*/
-.content .content-image::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  right: 32%;
-  background-image: url(/img/home/javascript.svg);
-  background-size: 60px;
-  background-repeat: no-repeat;
-  width: 90px;
-  height: 90px;
-}
-
-/* Hero css icon*/
-.content .content-image .overlay-icons::after {
-  content: "";
-  position: absolute;
-  bottom: -105px;
-  right: -30px;
-  width: 60px;
-  height: 60px;
-  background-image: url(/img/home/css3.svg);
-  background-repeat: no-repeat;
 }
 
 /* About */
@@ -467,10 +420,6 @@ h4 {
   margin-top: 0.5rem;
 }
 
-.social div img {
-  width: 135px;
-  height: 100%;
-}
 
 /* Responsive */
 @media (max-width: 890px) {
